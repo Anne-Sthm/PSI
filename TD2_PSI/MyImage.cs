@@ -392,13 +392,15 @@ namespace TD2_PSI
                                 enlargeMatrix[i * coeff + k, j * coeff + l] = this.imageMatrix[i, j];
                             }
                         }
-                }
+                    }
 
-                this.width *= coeff;
-                this.height *= coeff;
-                this.imageMatrix = enlargeMatrix;
+                    this.width *= coeff;
+                    this.height *= coeff;
+                    this.imageMatrix = enlargeMatrix;
+                }
             }
             else Console.WriteLine("Le coefficient d'agrandissement doit être supérieur à 1");
+            
         }
 
 

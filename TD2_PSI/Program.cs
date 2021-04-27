@@ -75,7 +75,7 @@ namespace TD2_PSI
                     switch (Int32.Parse(Console.ReadLine()))
                     {
                         case 0:
-                            Console.WriteLine("L'image par défaut est coco.bmp");
+                            /*Console.WriteLine("L'image par défaut est coco.bmp");
                             Console.WriteLine("Pour changer en Lena.bmp saisir 1 et pour changer en tigre.bmp tapez 2");
                             Console.WriteLine("Saisir un autre nombre pour rester sur coco.bmp");
                             int rep = Int32.Parse(Console.ReadLine());
@@ -89,6 +89,8 @@ namespace TD2_PSI
                             {
                                 nameImage = "tigre.bmp";
                             }
+                            */
+                            QRCode c = new QRCode("HELLO WORLD");
 
                             break;
                         case 1: // Infos sur l'image 
